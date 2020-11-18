@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		523A259C252911D900414723 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523A259B252911D900414723 /* Preview Assets.xcassets */; };
 		523A25A7252911D900414723 /* TestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A25A6252911D900414723 /* TestAppTests.swift */; };
 		523A25B2252911D900414723 /* TestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A25B1252911D900414723 /* TestAppUITests.swift */; };
+		523A25E52529297200414723 /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = 523A25E42529297200414723 /* ASCollectionView */; };
+		52FDFCBB2564F5BE00D1D2F4 /* EditSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDFCBA2564F5BE00D1D2F4 /* EditSheet.swift */; };
+		52FDFCC12564F60F00D1D2F4 /* iTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 52FDFCC02564F60F00D1D2F4 /* iTextField */; };
+		52FDFCC62564F6E000D1D2F4 /* RowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDFCC52564F6E000D1D2F4 /* RowItem.swift */; };
+		52FDFCCB2564F71700D1D2F4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDFCCA2564F71700D1D2F4 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,9 @@
 		523A25AD252911D900414723 /* TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		523A25B1252911D900414723 /* TestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppUITests.swift; sourceTree = "<group>"; };
 		523A25B3252911DA00414723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FDFCBA2564F5BE00D1D2F4 /* EditSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSheet.swift; sourceTree = "<group>"; };
+		52FDFCC52564F6E000D1D2F4 /* RowItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowItem.swift; sourceTree = "<group>"; };
+		52FDFCCA2564F71700D1D2F4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FDFCC12564F60F00D1D2F4 /* iTextField in Frameworks */,
+				523A25E52529297200414723 /* ASCollectionView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +89,7 @@
 				523A25A5252911D900414723 /* TestAppTests */,
 				523A25B0252911D900414723 /* TestAppUITests */,
 				523A2592252911D600414723 /* Products */,
+				523A25C92529132A00414723 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +111,9 @@
 				523A2598252911D900414723 /* Assets.xcassets */,
 				523A259D252911D900414723 /* Info.plist */,
 				523A259A252911D900414723 /* Preview Content */,
+				52FDFCBA2564F5BE00D1D2F4 /* EditSheet.swift */,
+				52FDFCC52564F6E000D1D2F4 /* RowItem.swift */,
+				52FDFCCA2564F71700D1D2F4 /* Item.swift */,
 			);
 			path = TestApp;
 			sourceTree = "<group>";
@@ -130,6 +144,13 @@
 			path = TestAppUITests;
 			sourceTree = "<group>";
 		};
+		523A25C92529132A00414723 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +167,10 @@
 			dependencies = (
 			);
 			name = TestApp;
+			packageProductDependencies = (
+				523A25E42529297200414723 /* ASCollectionView */,
+				52FDFCC02564F60F00D1D2F4 /* iTextField */,
+			);
 			productName = TestApp;
 			productReference = 523A2591252911D600414723 /* TestApp.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +242,10 @@
 				Base,
 			);
 			mainGroup = 523A2588252911D600414723;
+			packageReferences = (
+				523A25E32529297200414723 /* XCRemoteSwiftPackageReference "ASCollectionView" */,
+				52FDFCBF2564F60F00D1D2F4 /* XCRemoteSwiftPackageReference "iTextField" */,
+			);
 			productRefGroup = 523A2592252911D600414723 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FDFCCB2564F71700D1D2F4 /* Item.swift in Sources */,
+				52FDFCBB2564F5BE00D1D2F4 /* EditSheet.swift in Sources */,
 				523A2597252911D600414723 /* ContentView.swift in Sources */,
 				523A2595252911D600414723 /* TestAppApp.swift in Sources */,
+				52FDFCC62564F6E000D1D2F4 /* RowItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +459,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.consyse.showmetomorrow.TestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.consyse.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,7 +481,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.consyse.showmetomorrow.TestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.consyse.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,7 +502,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.consyse.showmetomorrow.TestAppTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.consyse.TestAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -492,7 +524,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.consyse.showmetomorrow.TestAppTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.consyse.TestAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,7 +544,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.consyse.showmetomorrow.TestAppUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.consyse.TestAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -532,7 +564,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.consyse.showmetomorrow.TestAppUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.consyse.TestAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -580,6 +612,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		523A25E32529297200414723 /* XCRemoteSwiftPackageReference "ASCollectionView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apptekstudios/ASCollectionView";
+			requirement = {
+				branch = v1.8.0WIP;
+				kind = branch;
+			};
+		};
+		52FDFCBF2564F60F00D1D2F4 /* XCRemoteSwiftPackageReference "iTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/benjaminsage/iTextField";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		523A25E42529297200414723 /* ASCollectionView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 523A25E32529297200414723 /* XCRemoteSwiftPackageReference "ASCollectionView" */;
+			productName = ASCollectionView;
+		};
+		52FDFCC02564F60F00D1D2F4 /* iTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52FDFCBF2564F60F00D1D2F4 /* XCRemoteSwiftPackageReference "iTextField" */;
+			productName = iTextField;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 523A2589252911D600414723 /* Project object */;
 }
